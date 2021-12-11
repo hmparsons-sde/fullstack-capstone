@@ -20,6 +20,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.1" />
+    <PackageReference Include="PodcastAPI" Version="1.1.0" />
+    <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
     <PackageReference Include="VueCliMiddleware" Version="3.1.2" />
   </ItemGroup>
 
@@ -33,6 +35,11 @@
   <ItemGroup>
     <Content Include="ClientApp\package-lock.json" />
     <Content Include="ClientApp\package.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\components\" />
+    <Folder Include="Database\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
