@@ -7,8 +7,8 @@ namespace AspNetCoreVueStarter.Models
 {
     public class User
     {
-        public Guid FirebaseKey { get; set; }
-        public Guid Uid { get; set; }
+        public string FirebaseKey { get; set; }
+        public Guid UserId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
     }
