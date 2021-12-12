@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace capstone_api_test.Models
+namespace AspNetCoreVueStarter.Models
 {
     public class Podcast
     {
@@ -15,7 +15,7 @@ namespace capstone_api_test.Models
         public int GenreIds { get; set; }
         public string Thumbnail { get; set; }
         public double ListenScore { get; set; }
-        public double TotalEpisodes { get; set; }
+        public int TotalEpisodes { get; set; }
         public bool ExplicitContent { get; set; }
         public int Episodes { get; set; }
     }
