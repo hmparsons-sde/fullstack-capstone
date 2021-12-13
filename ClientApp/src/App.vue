@@ -1,18 +1,18 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Wazzzup"/>
-</template>
+// <template>
+//   <img alt="Vue logo" src="./assets/logo.png">
+//   <HelloWorld msg="Wazzzup"/>
+// </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+// <script>
+// import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+// export default {
+//   name: 'App',
+//   components: {
+//     HelloWorld
+//   }
+// }
+// </script>
 
 <style>
 #app {
