@@ -1,18 +1,20 @@
-// <template>
-//   <img alt="Vue logo" src="./assets/logo.png">
-//   <HelloWorld msg="Wazzzup"/>
-// </template>
+<template>
+  <div id="app">
+    <HeaderBar />
+    <div class="main-section content-title-group">
+      <h2 class="title">Heroes</h2>
+      <div>We'll start here</div>
+    </div>
+  </div>
+</template>
 
-// <script>
-// import HelloWorld from './components/HelloWorld.vue'
-
-// export default {
-//   name: 'App',
-//   components: {
-//     HelloWorld
-//   }
-// }
-// </script>
+<script>
+import HeaderBar from '@/components/header/header-bar';
+export default {
+  name: 'App',
+  components: { HeaderBar },
+};
+</script>
 
 <style>
 #app {
