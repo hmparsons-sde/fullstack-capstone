@@ -24,5 +24,21 @@ namespace AspNetCoreVueStarter.DataAccess
             var users = db.Query<User>(@"select * from Users");
             return users;
         }
+        public User GetSingleUserById(Guid UserId)
+        {
+            using var db = new SqlConnection(_connectionString);
+            var singleUser = @"Select * from Users where userId = @UserId";
+            var user = db.QuerySingleOrDefault<User>(singleUser, new { userId = UserId });
+            if (user == null) return null;
+            return user;
+        }
+        public User GetSingleUserByFBKey(string FirebaseKey)
+        {
+            using var db = new SqlConnection(_connectionString);
+            var singleUser = @"Select * from Users where firebaseKey = @FirebaseKey";
+            var user = db.QuerySingleOrDefault<User>(singleUser, new { firebaseKey = FirebaseKey });
+            if (user == null) return null;
+            return user;
+        }
     }
 }
