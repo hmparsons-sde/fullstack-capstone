@@ -1,12 +1,14 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import './tailwind.css';
+import './index.css';
 
-createApp(App).mount('#app');
-// import Vue from 'vue';
-// import App from '@/app';
+Vue.config.productionTip = false;
 
-// Vue.config.productionTip = false;
-
-// new Vue({
-//     render: h => h(App),
-// }).$mount('#app');
+new Vue({
+  render: (h) => h(App),
+  router,
+  store,
+}).$mount('#app');

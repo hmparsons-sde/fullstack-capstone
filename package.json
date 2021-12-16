@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "dayjs": "^1.10.7",
     "firebase": "^9.6.1",
+    "vue": "^2.6.14",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
