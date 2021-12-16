@@ -56,11 +56,11 @@ import dayjs from 'dayjs';
 import DurationIcon from '@/components/icons/DurationIcon.vue';
 import TableItem from '@/components/TableItem.vue';
 
-const relativeTime = require('dayjs/plugin/relativeTime');
-require('dayjs/locale/tr');
+// const relativeTime = require('dayjs/plugin/relativeTime');
+// require('dayjs/locale/us');
 
-dayjs.extend(relativeTime);
-dayjs.locale('tr');
+// dayjs.extend(relativeTime);
+// dayjs.locale('us');
 
 export default {
   components: {

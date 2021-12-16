@@ -25,11 +25,11 @@ const routes = [
     name: 'album',
     component: () => import(/* webpackChunkName: "Album" */'@/views/Album.vue'),
   },
-  {
-    path: '/login',
-    name: 'login',
-    component: () => import(/* webpackChunkName: "Login" */'@/views/Login.vue'),
-  },
+  // {
+  //   path: '/login',
+  //   name: 'login',
+  //   component: () => import(/* webpackChunkName: "Login" */'@/views/Login.vue'),
+  // },
   {
     path: '/loading',
     name: 'loading',
@@ -40,11 +40,11 @@ const routes = [
     name: 'artist',
     component: () => import(/* webpackChunkName: "Artist" */'@/views/Artist.vue'),
   },
-  {
-    path: '/callback',
-    name: 'Loggingin',
-    component: () => import(/* webpackChunkName: "Loggin in" */'@/views/Callback.vue'),
-  },
+  // {
+  //   path: '/callback',
+  //   name: 'Loggingin',
+  //   component: () => import(/* webpackChunkName: "Loggin in" */'@/views/Callback.vue'),
+  // },
 ];
 
 export default routes;

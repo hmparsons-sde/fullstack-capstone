@@ -3,7 +3,7 @@
     <div class="text-2xl font-bold tracking-tighter">Artists' choice</div>
     <div class="pt-4 flex">
       <div class="w-[4.5rem] h-[4.5rem] shadow-lg mr-4 rounded-smmr-4 relative">
-        <img :src="albumImg" alt="ArtistsChosenItem">
+        <img :src="albumImg" alt="ArtistChosenItem">
       </div>
       <div>
         <div class="flex p-0.5 bg-white rounded-full text-black items-center">

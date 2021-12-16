@@ -1,7 +1,7 @@
 <template>
   <div class="text-white bg-contentColor overflow-y-auto h-full">
 
-    <playlist-header
+    <!-- <playlist-header
       v-if="album"
       :key="album.id"
       :name="album.name"
@@ -13,7 +13,7 @@
       :likeCount="album.release_date"
       type="album"
       description=""
-    />
+    /> -->
 
     <div class="w-full px-8 pr-14 pt-10">
       <table
@@ -65,7 +65,7 @@
 <script>
 import { mapState } from 'vuex';
 
-import PlaylistHeader from '../components/PlaylistHeader.vue';
+// import PlaylistHeader from '../components/PlaylistHeader.vue';
 import TableItem from '../components/TableItem.vue';
 import DurationIcon from '../components/icons/DurationIcon.vue';
 
@@ -77,7 +77,6 @@ export default {
   },
 
   components: {
-    PlaylistHeader,
     TableItem,
     DurationIcon,
   },

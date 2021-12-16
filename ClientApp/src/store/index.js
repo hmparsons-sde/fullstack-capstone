@@ -7,7 +7,7 @@ import currentUserModule from './modules/currentUser';
 import placeholderModule from './modules/placeholder';
 import artistModule from './modules/pages/artist';
 import albumModule from './modules/pages/album';
-import playlistModule from './modules/pages/playlist';
+// import playlistModule from './modules/pages/playlist';
 import profileModule from './modules/pages/profile';
 import searchModule from './modules/pages/search';
 import guestModule from './modules/guest';
@@ -25,7 +25,6 @@ export default new Vuex.Store({
         artist: artistModule,
         search: searchModule,
         profile: profileModule,
-        playlist: playlistModule,
         album: albumModule,
         guest: guestModule,
       },

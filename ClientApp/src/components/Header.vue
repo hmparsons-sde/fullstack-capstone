@@ -31,7 +31,7 @@
       <header-tabs />
     </div>
 
-    <header-not-authenticated v-if="!isAuthenticated" />
+    <!-- <header-not-authenticated v-if="!isAuthenticated" /> -->
   </header>
 </template>
 
@@ -40,14 +40,13 @@
 import HeaderRoute from './header/HeaderRoute.vue';
 import HeaderSearch from './header/HeaderSearch.vue';
 import HeaderTabs from './header/HeaderTabs.vue';
-import HeaderNotAuthenticated from './header/HeaderNotAuthenticated.vue';
+// import HeaderNotAuthenticated from './header/HeaderNotAuthenticated.vue';
 
 export default {
   components: {
     HeaderRoute,
     HeaderSearch,
     HeaderTabs,
-    HeaderNotAuthenticated,
   },
 
 };
