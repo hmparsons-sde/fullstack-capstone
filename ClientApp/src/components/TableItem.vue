@@ -106,11 +106,11 @@ import PlayArrowIcon from '@/components/icons/PlayArrowIcon.vue';
 import HeartIcon from '@/components/icons/HeartIcon.vue';
 import FilledHeartIcon from '@/components/icons/FilledHeartIcon.vue';
 
-const relativeTime = require('dayjs/plugin/relativeTime');
-require('dayjs/locale/tr');
+// const relativeTime = require('dayjs/plugin/relativeTime');
+// require('dayjs/locale/us');
 
-dayjs.extend(relativeTime);
-dayjs.locale('tr');
+// dayjs.extend(relativeTime);
+// dayjs.locale('us');
 
 export default {
   components: {

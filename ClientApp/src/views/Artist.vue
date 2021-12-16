@@ -1,13 +1,13 @@
 <template>
     <div class="flex flex-col h-full w-full text-white overflow-auto" v-show="!isLoading" v-if="artistsData">
-
+<!-- 
         <playlist-header
             v-if="artistsData"
             type="artist"
             :name="artistsData.name"
             :picture="artistsData.images[0].url"
             :likeCount="artistsData.followers.total"
-        />
+        /> -->
 
         <artist-content
           :artist-img="artistsData.images[0].url"
@@ -19,12 +19,11 @@
 <script>
   import { mapState } from 'vuex';
 
-  import PlaylistHeader from '@/components/PlaylistHeader.vue';
+  // import PlaylistHeader from '@/components/PlaylistHeader.vue';
   import ArtistContent from '@/components/artist/ArtistContent.vue';
 
   export default {
     components: {
-        PlaylistHeader,
         ArtistContent,
     },
 

@@ -15,21 +15,20 @@
 
     <div class="border-t border-white border-opacity-20 w-[calc(100%-20)] mx-6 h-1"/>
 
-    <Playlists/>
+    <!-- <Playlists/> -->
 
   </aside>
 </template>
 
 <script>
 import { mapState } from 'vuex';
-import Menu from './sidebar/Menu.vue';
-import Playlists from './sidebar/Playlists.vue';
+import Menu from './sidenav/Menu.vue';
+// import Playlists from './sidenav/Playlists.vue';
 import SpotifyLogo from './icons/SpotifyLogo.vue';
 
 export default {
   components: {
     Menu,
-    Playlists,
     SpotifyLogo,
   },
 

@@ -10,16 +10,16 @@
 
         <div class="flex flex-col w-full">
 
-          <HomeWelcomeText/>
+          <!-- <HomeWelcomeText/> -->
 
           <div class="grid xsmall-grid-cols-1 xsmall:grid-cols-2 small:grid-cols-3 xxlarge:grid-cols-4 gap-4 overflow-y-hidden">
 
-            <HomeWelcomeItem
+            <!-- <HomeWelcomeItem
               class="ofSixHide ofFourHide ofTwoHide xsmall:ofSixShow small:ofFourShow xxlarge:ofTwoShow"
               v-for="playlist in playlists(8)"
               :data="playlist"
               :key="playlist.id"
-            />
+            /> -->
 
           </div>
         </div>
@@ -55,16 +55,14 @@
   import { mapGetters, mapState } from 'vuex';
 
   import Shelf from '../components/Shelf.vue';
-  import HomeWelcomeItem from '../components/home/HomeWelcomeItem.vue';
-  import HomeWelcomeText from '../components/home/HomeWelcomeText.vue';
+  // import HomeWelcomeItem from '../components/home/HomeWelcomeItem.vue';
+  // import HomeWelcomeText from '../components/home/HomeWelcomeText.vue';
 
   export default {
     name: 'Home',
 
     components: {
       Shelf,
-      HomeWelcomeItem,
-      HomeWelcomeText,
     },
 
     created() {

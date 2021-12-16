@@ -12,7 +12,7 @@
           <div class="text-xs pt-10 cursor-default text-normalColor hover:text-white"> SEE MORE</div>
         </div>
 
-        <artists-chosen
+        <artist-chosen
           :artist-img="artistImg"
           :album-name="slicedArtistsAlbums(6)[0].name"
           :album-id="slicedArtistsAlbums(6)[0].id"
@@ -38,7 +38,7 @@ import ArtistContentHeader from '@/components/artist/artist-content/ArtistConten
 import ArtistContentTable from '@/components/artist/artist-content/ArtistContentTable.vue';
 import ArtistContentShelves from '@/components/artist/artist-content/ArtistContentShelves.vue';
 import ArtistContentAbout from '@/components/artist/artist-content/ArtistContentAbout.vue';
-import ArtistsChosen from '@/components/artist/artist-content/ArtistsChosen.vue';
+import ArtistChosen from '@/components/artist/artist-content/ArtistChosen.vue';
 
 export default {
   props: {
@@ -68,7 +68,7 @@ export default {
     ArtistContentTable,
     ArtistContentShelves,
     ArtistContentAbout,
-    ArtistsChosen,
+    ArtistChosen,
   },
 };
 </script>
