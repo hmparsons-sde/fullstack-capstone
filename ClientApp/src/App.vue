@@ -1,31 +1,51 @@
 <template>
     <div
-        id="app"
-        @click.right="rightClick($event)"
-      >
-        <div class="wrapper">
-          <Menu />
-            <main class="flex flex-auto flex-col overflow-hidden relative">
-              <HeaderBar />
-            <div class="main-section content-title-group">
-          <h2 class="title">Heroes</h2>
-        <div>We'll start here</div>
+      id="app"
+      @click.right="rightClick($event)"
+    >
+
+      <div class="wrapper">
+        <Sidebar />
+
+          <main class="flex flex-auto flex-col overflow-hidden relative">
+            <Header/>
+
+            <router-view v-show="!isLoading"/>
+
+            <div class="w-full h-full flex justify-center items-center bg-contentColor" v-show="isLoading">
+              <loading/>
+            </div>
+
+          </main>
+
       </div>
-    </main>
+
+      <Footer/>
   </div>
-</div>
 </template>
 
 <script>
-import { mapState } from "vuex";
-import Menu from "@/components/sidenav/Menu.vue";
-import HeaderBar from "@/components/header/header-bar";
+import { mapState } from 'vuex';
+
+import Sidebar from '@/components/Sidebar.vue';
+import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
+import Loading from './views/Loading.vue';
+
 export default {
-  name: "App",
-  components: { HeaderBar, Menu },
-  computed: {
-    ...mapState(["isLoading"]),
+  components: {
+    Sidebar,
+    Header,
+    Footer,
+    Loading,
   },
+
+  computed: {
+    ...mapState([
+      'isLoading',
+    ]),
+  },
+
   methods: {
     rightClick(e) {
       e.preventDefault();
@@ -33,14 +53,3 @@ export default {
   },
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
