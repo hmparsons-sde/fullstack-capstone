@@ -20,6 +20,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin-top: 80px;
+  color: #F5F6F4;
 }
 .subhero > h1
 {
@@ -31,14 +32,15 @@ export default {
 }
 .sub__btn
 {
-  background-color: #fff;
-  color:#616467;
+  background-color: #282320;
+  color: #F5F6F4;
   /* border: none; */
-  border: 2px solid #616467;
+  border: 2px solid #BE3E3A;
   width: 20%;
   padding: 15px;
   font-size: 15px;
   margin-bottom: 50px;
+  margin-top: 30px;
 }
 .sub__btn:hover{
   background-color: #616467;

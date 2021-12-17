@@ -3,7 +3,7 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <div>
   <Header />
-  <Root />
+    <Root />
     <router-view></router-view>
   <Footer />
   </div>

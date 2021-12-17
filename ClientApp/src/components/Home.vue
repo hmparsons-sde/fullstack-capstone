@@ -1,7 +1,9 @@
 <template lang="html">
   <div class="home__background">
     <div class="home__text">
-      <h1>Go Premium. Be happy</h1>
+      <div class="home__image">
+        <img src="../assets/Poddammit.png">
+      </div>
     </div>
   </div>
 </template>
@@ -14,7 +16,7 @@ export default {
 
 <style lang="css" scoped>
 .home__background {
-  background-color: #f3c05b;
+  background-color: #282320;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -53,5 +55,9 @@ export default {
   color: #fff;
   text-align: center;
   font-size: 10px;
+}
+.home__image {
+  width: 55%;
+  height: 50%;
 }
 </style>

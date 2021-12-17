@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="mtop">
-    <h1>This is about page</h1>
+    <h1>This is the about page</h1>
 
   </div>
 </template>

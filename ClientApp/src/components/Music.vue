@@ -7,14 +7,19 @@
       class="music__banner"
       alt="img"
     />
-    <span class="abs music__heading">{{title}}</span>
-    <span class="abs link">Play Now</span>
+    <span class="abs link">
+      <play-button :width="128" :height="128"/>
+    </span>
   </div>
 </template>
 
 <script>
+import PlayButton from '../components/icons/PlayButton.vue'
 export default {
   name:'Music',
+  components: {
+    PlayButton,
+  },
   props:{
     img:String,
     title:String
@@ -25,7 +30,7 @@ export default {
 <style lang="css" scoped>
 .music {
   width: 30%;
-  height: 334px;
+  height: 30%;
   /* margin-bottom: 100px; */
   position: relative;
   margin-right: 10px;
@@ -45,7 +50,7 @@ export default {
     width: 100%;
     min-width: 70%;
     background-color: rgba(0,0,0,0.9);
-    height: 326px;
+    height: 100%;
     opacity: 0;
     transition: 0.5s ease;
 }
@@ -75,7 +80,7 @@ export default {
 }
 .abs {
   position: absolute;
-  top: 150px;
+  top: 80px;
   left: 80px;
   visibility: hidden;
 }
