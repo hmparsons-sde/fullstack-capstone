@@ -1,5 +1,5 @@
 {
-  "name": "spotify-clone",
+  "name": "poddammit",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,10 +16,10 @@
     "lodash": "^4.17.21",
     "qs": "^6.10.1",
     "v-click-outside": "^3.1.2",
-    "vue": "^2.6.11",
+    "vue": "^3.2.26",
     "vue-router": "^3.2.0",
     "vue-slider-component": "^4.0.0-beta.4",
-    "vuex": "^3.4.0"
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -34,8 +34,9 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
     "postcss": "^7.0.39",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16",
-    "vue-template-compiler": "^2.6.11"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
     "root": true,
