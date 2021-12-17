@@ -1,12 +1,12 @@
 <template lang="html">
   <div class="yourmusic">
 
-      <Music img='https://i.scdn.co/image/ab67616d00001e0252fe6875028c892308ffc2f7' title='Jab we met'/>
-      <Music img='https://i.scdn.co/image/ab67616d00001e02e7c61465b863bed7d6f7a2ba' title='Cubicles'/>
-      <Music img='https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96' title='Divide'/>
-      <Music img='https://dailymix-images.scdn.co/v2/img/f8c23e3e6a1f64489869915e36b6fb358e8cff76/1/en/large' title='Daily Mix 1'/>
-      <Music img='https://i.scdn.co/image/ab67616d00001e02abfecfcab2c8ebe924b2dd9f' title='Flames'/>
-      <Music img='https://i.scdn.co/image/ab67616d00001e02d7c47da4f602a212a38254ea' title='Pitchers'/>
+      <Music img='https://img.podcastone.com/images/new/joodkmjin/smalltownmurder_logo.jpg' title='Small Town Murder'/>
+      <Music img='https://pyxis.nymag.com/v1/imgs/741/c47/f4b61fb6a3f29d799f58be559c5fcf79d1-crime-in-sports.2x.rsquare.w190.jpg' title='Crime in Sports'/>
+      <Music img='https://allthingscomedy.com/images/_larger/DOLLOP_cover2.jpg' title='The Dollop with Dave Anthony and Garreth Reynolds'/>
+      <Music img='https://timesuckpodcast.com/Content/Images/Timesuck-With-Dan.png' title='Timesuck with Dan Cummins'/>
+      <Music img='https://teachinghub.as.ua.edu/wp-content/uploads/2016/10/serial-itunes-logo.png' title='Serial'/>
+      <Music img='https://pyxis.nymag.com/v1/imgs/b5b/494/4c18b3dea0b3664b88f9c81ab5174907ec-hot-pod-teachers-pet.rsquare.w1200.jpg' title="The Teacher's Pet"/>
 
   </div>
 </template>

@@ -1,26 +1,11 @@
 <template lang="html">
       <div class="connect__music">
-        <h1 class="heading">Connect with music culture</h1>
+        <h1 class="heading">Podcasts you may like</h1>
         <div class="music__card__div">
           <div class="music__card">
-              <img src="https://i.scdn.co/image/ab67706f00000003b7924d3f578ae98456fdf525" alt="img">
-              <h3>Bollywood Rock</h3>
-              <span>The finest quality Bollywood music handpicked for you.</span>
-          </div>
-          <div class="music__card">
-              <img src="https://mosaic.scdn.co/300/ab67616d0000b27322287a5cc976690b88259babab67616d0000b273375bf11209444fdd2099be86ab67616d0000b27368380dfb77b7ab24ec8a7190ab67616d0000b273dd8f11e5b3c77cd2a9517ee0" alt="img">
-              <h3>Punjabi 101</h3>
-              <span>The ultimate Punjabi hits.</span>
-          </div>
-          <div class="music__card">
-              <img src="https://i.scdn.co/image/ab67706f000000031841a8b6cf4d7d7ab0bca95e" alt="img">
-              <h3>Tollywood Divas</h3>
-              <span>The finest music from Telugu films.</span>
-          </div>
-          <div class="music__card">
-              <img src="https://i.scdn.co/image/ab67616d00001e02348468c203278d510f0cbc5a" alt="img">
-              <h3>Hot Hits India</h3>
-              <span>50 hottest hits from across the globe.</span>
+              <img src="https://img.podcastone.com/images/new/joodkmjin/smalltownmurder_logo.jpg" alt="img">
+              <h3>Small Town Murder</h3>
+              <span>with James Pietrogallo & Jimmie Wisman</span>
           </div>
         </div>
       </div>

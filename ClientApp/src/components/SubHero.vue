@@ -1,7 +1,7 @@
 <template lang="html">
     <div class="subhero">
-      <h1>Looking for music?</h1>
-      <span>Pick up your recently played right where you left off.</span>
+      <h1>Looking for podcasts?</h1>
+      <span>Pick up where you left off...</span>
       <button type="button" class="btn sub__btn">launch web player</button>
     </div>
 </template>
