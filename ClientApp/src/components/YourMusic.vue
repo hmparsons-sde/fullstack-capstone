@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import Music from './Music.vue'
+import Music from "./Music.vue";
 export default {
   name: "YourMusic",
-  components:{
+  components: {
     Music,
-  }
+  },
 };
 </script>
 
@@ -28,10 +28,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 50px; */
   flex-wrap: wrap;
   margin-bottom: 80px;
-
 }
-
 </style>

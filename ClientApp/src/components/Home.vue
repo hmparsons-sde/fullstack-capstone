@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "Home"
+  name: "Home",
 };
 </script>
 
@@ -56,8 +56,8 @@ export default {
   text-align: center;
   font-size: 10px;
 }
-.home__image {
+/* .home__image {
   width: 55%;
   height: 50%;
-}
+} */
 </style>
