@@ -52,5 +52,12 @@ namespace AspNetCoreVueStarter.DataAccess
             var episodeArray = db.Query<Episode>(@"SELECT * from Episodes WHERE Genre = @Genre", new { Genre });
             return (List<Episode>)episodeArray;
         }
+        public Episode ShuffleEpisodes()
+        {
+            using var db = new SqlConnection(_connectionString);
+            var sql = @"select * from episodes
+                        Order by newId()";
+            return db.QueryFirstOrDefault<Episode>(sql);
+        }
     }
 }
