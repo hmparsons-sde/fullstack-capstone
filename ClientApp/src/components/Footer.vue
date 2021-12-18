@@ -28,13 +28,6 @@
           <li>Free Mobile App</li>
         </ul>
       </div>
-      <!-- <div class="fifth">
-        <svg>
-          <img src="../assets/icons/instagram.svg" alt="insta" class="icons">
-
-        </svg>
-
-      </div> -->
     </div>
     <div class="misc">
       <span>Legal</span>

@@ -3,7 +3,7 @@
 
     <div class="header">
         <!-- <div class="logo__header">
-          <router-link to='/'><img src="../assets/Poddammit.png" alt="header__log"/></router-link>
+          <router-link to='/'><img src="https://media.istockphoto.com/videos/audio-wave-on-black-background-video-id1126438594?s=640x640" alt="header__log"/></router-link>
 
         </div> -->
 
