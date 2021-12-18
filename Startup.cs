@@ -24,6 +24,9 @@ namespace AspNetCoreVueStarter
         {
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddTransient<UserRepository>();
+            services.AddTransient<EpisodeRepository>();
+            services.AddTransient<PodcastRepository>();
+            services.AddTransient<PlaylistRepository>();
 
             services.AddControllers()
                     .AddJsonOptions(opts =>

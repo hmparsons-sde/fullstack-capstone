@@ -13,15 +13,42 @@ namespace AspNetCoreVueStarter.Controllers
     public class PodcastController : Controller
     {
         PodcastRepository _repo;
-        public PodcastController()
+        public PodcastController(PodcastRepository repo)
         {
-            _repo = new PodcastRepository();
+            _repo = repo;
         }
 
         [HttpGet]
-        public List<Podcast> GetPodcasts()
+        public IActionResult GetPodcasts()
         {
-            return _repo.GetPodcasts();
+            return Ok(_repo.GetAllPodcasts());
+        }
+        [HttpGet("{Id}")]
+        public IActionResult GetPodcastById(Guid Id)
+        {
+            var Podcast = _repo.GetSinglePodcastById(Id);
+
+            if (Podcast == null)
+            {
+                return NotFound($"No Podcast with {Id} was found.");
+            }
+
+            return Ok(Podcast);
+        }
+        [HttpGet("PodcastTypes/{PodcastType}")]
+        public List<Podcast> GetPodcastsByType(PodcastType Type)
+        {
+            return _repo.GetPodcastsByType(Type);
+        }
+        [HttpGet("PodcastName/{Title}")]
+        public IActionResult GetPodcastByTitle(string Title)
+        {
+            return Ok(_repo.GetPodcastsByTitle(Title));
+        }
+        [HttpGet("PodcastGenres/{PodcastGenres}")]
+        public List<Podcast> GetPodcastsByGenre(PodcastGenre Genre)
+        {
+            return _repo.GetPodcastsByGenre(Genre);
         }
     }
 }

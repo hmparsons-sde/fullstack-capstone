@@ -13,15 +13,42 @@ namespace AspNetCoreVueStarter.Controllers
     public class EpisodeController : Controller
     {
         EpisodeRepository _repo;
-        public EpisodeController()
+        public EpisodeController(EpisodeRepository repo)
         {
-            _repo = new EpisodeRepository();
+            _repo = repo;
         }
 
         [HttpGet]
-        public List<Episode> GetEpisodes()
+        public IActionResult GetEpisodes()
         {
-            return _repo.GetAllEpisodes();
+            return Ok(_repo.GetAllEpisodes());
+        }
+        [HttpGet("{Id}")]
+        public IActionResult GetEpisodeById(Guid Id)
+        {
+            var episode = _repo.GetSingleEpisodeById(Id);
+
+            if (episode == null)
+            {
+                return NotFound($"No Episode with {Id} was found.");
+            }
+
+            return Ok(episode);
+        }
+        [HttpGet("EpisodeTypes/{EpisodeType}")]
+        public List<Episode> GetEpisodesByType(EpisodeType Type)
+        {
+            return _repo.GetEpisodesByType(Type);
+        }
+        [HttpGet("EpisodeName/{Title}")]
+        public IActionResult GetEpisodeByTitle(string Title)
+        {
+            return Ok(_repo.GetEpisodesByTitle(Title));
+        }
+        [HttpGet("EpisodeGenres/{EpisodeGenres}")]
+        public List<Episode> GetEpisodesByGenre(EpisodeGenre Genre)
+        {
+            return _repo.GetEpisodesByGenre(Genre);
         }
     }
 }

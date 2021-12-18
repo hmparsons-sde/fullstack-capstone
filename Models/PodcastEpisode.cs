@@ -10,5 +10,6 @@ namespace AspNetCoreVueStarter.Models
         public Guid Id { get; set; }
         public Guid PodcastId { get; set; }
         public Guid EpisodeId { get; set; }
+        public IEnumerable<Episode> Episode { get; set; }
     }
 }
