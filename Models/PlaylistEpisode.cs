@@ -9,5 +9,6 @@ namespace AspNetCoreVueStarter.Models
     {
         public Guid PlaylistId { get; set; }
         public Guid EpisodeId { get; set; }
+        public IEnumerable<PodcastEpisode> PodcastEpisodes { get; set; }
     }
 }
