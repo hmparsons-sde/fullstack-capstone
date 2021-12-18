@@ -7,24 +7,18 @@
       class="music__banner"
       alt="img"
     />
-    <span class="abs link">
-      <play-button :width="128" :height="128"/>
-    </span>
   </div>
 </template>
 
 <script>
-import PlayButton from '../components/icons/PlayButton.vue'
+// import PlayButton from '../components/icons/PlayButton.vue'
 export default {
-  name:'Music',
-  components: {
-    PlayButton,
+  name: "Music",
+  props: {
+    img: String,
+    title: String,
   },
-  props:{
-    img:String,
-    title:String
-  }
-}
+};
 </script>
 
 <style lang="css" scoped>
@@ -43,27 +37,23 @@ export default {
   width: 100%;
   min-width: 70%;
 }
-.overlay
-{
-    position: absolute;
+.overlay {
+  position: absolute;
 
-    width: 100%;
-    min-width: 70%;
-    background-color: rgba(0,0,0,0.9);
-    height: 100%;
-    opacity: 0;
-    transition: 0.5s ease;
+  width: 100%;
+  min-width: 70%;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
 }
-.music:hover .overlay
-{
+.music:hover .overlay {
   opacity: 1;
 }
-.music:hover .abs
-{
+.music:hover .abs {
   visibility: visible;
 }
-.music__heading
-{
+.music__heading {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -72,11 +62,10 @@ export default {
 
   /* visibility: hidden; */
 }
- .link
-{
+.link {
   margin: 46px;
   font-weight: bold;
-  color: #1ED760;
+  color: #1ed760;
 }
 .abs {
   position: absolute;
@@ -84,8 +73,7 @@ export default {
   left: 80px;
   visibility: hidden;
 }
-.music__heading
-{
+.music__heading {
   left: 120px;
 }
 </style>

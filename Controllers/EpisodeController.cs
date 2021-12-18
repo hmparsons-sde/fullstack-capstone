@@ -50,5 +50,12 @@ namespace AspNetCoreVueStarter.Controllers
         {
             return _repo.GetEpisodesByGenre(Genre);
         }
+        [HttpGet("random/")]
+        public IActionResult GetRandomEpisode()
+        {
+            var randomEp = _repo.ShuffleEpisodes();
+
+            return Ok(randomEp);
+        }
     }
 }

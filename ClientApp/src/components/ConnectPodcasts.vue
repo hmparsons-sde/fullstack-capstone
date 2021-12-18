@@ -13,54 +13,46 @@
 
 <script>
 export default {
-  name:'ConnectMusic'
-}
+  name: "ConnectMusic",
+};
 </script>
 
 <style lang="css" scoped>
-.connect__music{
+.connect__music {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   padding: 100px;
 }
-.heading{
-  margin-bottom:  60px;
+.heading {
+  margin-bottom: 60px;
   font-size: 3em;
 }
-.music__card__div{
-  /* width: 90%; */
+.music__card__div {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  /* flex-wrap: wrap; */
-
-
 }
-.music__card h3
-{
+.music__card h3 {
   margin-bottom: 10px;
 }
-span
-{
+span {
   line-height: 1.5rem;
   font-size: 12px;
 }
-.music__card{
+.music__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  /* height: 500px;    */
   width: 25%;
 }
-.music__card img{
+.music__card img {
   height: 150px;
   margin-bottom: 20px;
-
 }
 </style>

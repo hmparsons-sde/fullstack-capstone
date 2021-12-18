@@ -1,13 +1,19 @@
 <template lang="html">
-  <header class="text-white w-full h-[60px] min-h-[60px] px-4 z-10 flex items-center border-b border-white border-opacity-5">
+  <header>
 
-    <div class="relative flex flex-shrink-0 flex-grow-0 justify-between items-center w-full gap-3 h-full">
-        <div>
-          <router-link to='/'>Home</router-link>
+    <div class="header">
+        <!-- <div class="logo__header">
+          <router-link to='/'><img src="https://media.istockphoto.com/videos/audio-wave-on-black-background-video-id1126438594?s=640x640" alt="header__log"/></router-link>
 
-        </div>
-      <div>
-        <span>Profile</span>
+        </div> -->
+
+      <div class="navlink__header">
+          <div class="link__container">
+              <router-link to="/shuffle"><div class="nav__link">Shuffler</div></router-link>
+              <router-link to="/search"><div class="nav__link">Search</div></router-link>
+              <router-link to="/playlists"><div class="nav__link">Playlists</div></router-link>
+              <router-link to="/profile"><div class="nav__link">Your profile</div></router-link>
+          </div>
       </div>
     </div>
   </header>
@@ -16,10 +22,12 @@
 
 <script>
 export default {
-  name:'Header'
-}
+  name: "Header",
+};
 </script>
 
 <style lang="css" scoped>
-
+a {
+  color: white;
+}
 </style>

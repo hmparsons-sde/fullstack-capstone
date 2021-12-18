@@ -2,47 +2,42 @@
     <div class="subhero">
       <h1>Looking for podcasts?</h1>
       <span>Pick up where you left off...</span>
-      <button type="button" class="btn sub__btn">launch web player</button>
+     <router-link to="/search"><button type="button" class="btn sub__btn">SEARCH</button></router-link>
     </div>
 </template>
 
 <script>
 export default {
-  name:'SubHero'
-}
+  name: "SubHero",
+};
 </script>
 
 <style lang="css" scoped>
-.subhero
-{
+.subhero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 80px;
-  color: #F5F6F4;
+  color: #f5f6f4;
 }
-.subhero > h1
-{
+.subhero > h1 {
   font-size: 3em;
 }
-.subhero > span
-{
+.subhero > span {
   margin-top: 10px;
 }
-.sub__btn
-{
+.sub__btn {
   background-color: #282320;
-  color: #F5F6F4;
-  /* border: none; */
-  border: 2px solid #BE3E3A;
-  width: 20%;
-  padding: 15px;
+  color: #f5f6f4;
+  border: 2px solid #be3e3a;
+  width: 100%;
+  padding: 18px;
   font-size: 15px;
   margin-bottom: 50px;
   margin-top: 30px;
 }
-.sub__btn:hover{
+.sub__btn:hover {
   background-color: #616467;
   color: #fff;
 }

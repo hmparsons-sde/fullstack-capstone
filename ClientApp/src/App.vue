@@ -1,26 +1,21 @@
-/* eslint-disable vue/valid-template-root */
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <div>
-  <Header />
-    <Root />
+    <Header />
     <router-view></router-view>
-  <Footer />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from '../src/components/Header.vue'
-import Root from '../src/components/Root.vue'
-import Footer from '../src/components/Footer.vue'
-import './tailwind.css'
-
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
+import "./tailwind.css";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     Footer,
-    Root,
-  }
-}
+  },
+};
 </script>
