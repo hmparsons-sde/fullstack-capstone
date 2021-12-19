@@ -36,12 +36,14 @@
         Search
       </button>
     </div>
-
-    <ul class="px-3 list-disc">
-      <li v-for="podcast in podcasts" :key="podcast.id">
-        {{ this.$data.Title }}
-      </li>
-    </ul>
+    <h1>Results</h1>
+    <div class="p-5">
+      <ul>
+        <li v-for="podcast in podcasts" :key="podcast.id">
+          {{ podcast.title }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -76,8 +78,7 @@ export default {
         )
         .then((res) => {
           // eslint-disable-next-line no-console
-          console.log(res.data.results);
-          this.podcasts = res.data.results;
+          this.podcasts = res.data;
         })
         .catch((err) => {
           // eslint-disable-next-line no-console
