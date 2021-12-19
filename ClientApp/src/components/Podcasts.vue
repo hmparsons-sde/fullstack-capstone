@@ -1,10 +1,10 @@
 <template lang="html">
-  <div class="music">
+  <div class="Podcasts">
     <div class="overlay">
     </div>
     <img
       :src='img'
-      class="music__banner"
+      class="Podcasts__banner"
       alt="img"
     />
   </div>
@@ -13,7 +13,7 @@
 <script>
 // import PlayButton from '../components/icons/PlayButton.vue'
 export default {
-  name: "Music",
+  name: "Podcasts",
   props: {
     img: String,
     title: String,
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.music {
+.Podcasts {
   width: 30%;
   height: 30%;
   /* margin-bottom: 100px; */
@@ -33,7 +33,7 @@ export default {
   text-align: center;
   cursor: pointer;
 }
-.music .music__banner {
+.Podcasts .Podcasts__banner {
   width: 100%;
   min-width: 70%;
 }
@@ -47,13 +47,13 @@ export default {
   opacity: 0;
   transition: 0.5s ease;
 }
-.music:hover .overlay {
+.Podcasts:hover .overlay {
   opacity: 1;
 }
-.music:hover .abs {
+.Podcasts:hover .abs {
   visibility: visible;
 }
-.music__heading {
+.Podcasts__heading {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -73,7 +73,7 @@ export default {
   left: 80px;
   visibility: hidden;
 }
-.music__heading {
+.Podcasts__heading {
   left: 120px;
 }
 </style>

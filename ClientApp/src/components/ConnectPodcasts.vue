@@ -1,8 +1,8 @@
 <template lang="html">
-      <div class="connect__music">
+      <div class="connect__Podcasts">
         <h1 class="heading">Podcasts you may like</h1>
-        <div class="music__card__div">
-          <div class="music__card">
+        <div class="Podcasts__card__div">
+          <div class="Podcasts__card">
               <img src="https://img.podcastone.com/images/new/joodkmjin/smalltownmurder_logo.jpg" alt="img">
               <h3>Small Town Murder</h3>
               <span>with James Pietrogallo & Jimmie Wisman</span>
@@ -13,12 +13,12 @@
 
 <script>
 export default {
-  name: "ConnectMusic",
+  name: "ConnectPodcasts",
 };
 </script>
 
 <style lang="css" scoped>
-.connect__music {
+.connect__Podcasts {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,19 +30,19 @@ export default {
   margin-bottom: 60px;
   font-size: 3em;
 }
-.music__card__div {
+.Podcasts__card__div {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.music__card h3 {
+.Podcasts__card h3 {
   margin-bottom: 10px;
 }
 span {
   line-height: 1.5rem;
   font-size: 12px;
 }
-.music__card {
+.Podcasts__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +51,7 @@ span {
   text-align: center;
   width: 25%;
 }
-.music__card img {
+.Podcasts__card img {
   height: 150px;
   margin-bottom: 20px;
 }

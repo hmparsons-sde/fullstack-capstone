@@ -3,20 +3,26 @@
 <div>
   <Home />
   <SubHero />
-  <YourMusic />
+  <YourPodcasts />
+  <Search/>
+  <InputBase/>
   </div>
 </template>
 
 <script>
 import Home from "./Home.vue";
 import SubHero from "./SubHero.vue";
-import YourMusic from "./YourMusic.vue";
+import YourPodcasts from "./YourPodcasts.vue";
+import Search from '../views/Search.vue';
+import InputBase from '../components/base/InputBase.vue';
 export default {
   name: "Root",
   components: {
     Home,
     SubHero,
-    YourMusic,
+    YourPodcasts,
+    Search,
+    InputBase,
   }
 };
 </script>
