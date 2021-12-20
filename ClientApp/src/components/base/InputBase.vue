@@ -1,8 +1,15 @@
 <template>
   <div class="input-base">
-    <div class="w-full px-3 mb-6">
-      <div class="relative mb-3">
-        <input v-model="Title" class="" id="title" />
+    <div>
+      <hr />
+
+      <div class="subhero">
+        <h1>Know what you're looking for?</h1>
+        <span>Search here!</span>
+      </div>
+
+      <div>
+        <input v-model="Title" class="btn title-search" id="title" />
         <div>
           <svg
             class="h-4 w-4"
@@ -21,36 +28,23 @@
           </svg>
         </div>
       </div>
-      <button
-        @click.prevent="checkName"
-        class="
-          bg-blue-500
-          hover:bg-blue-700
-          text-white
-          font-bold
-          py-2
-          px-4
-          rounded
-        "
-      >
-        Search
-      </button>
+      <button @click.prevent="checkName" class="btn sub__btn">Search</button>
     </div>
-    <h1>Results</h1>
-    <div class="p-5">
+    <div class="p-5 search-results">
       <ul>
         <li v-for="podcast in podcasts" :key="podcast.id">
           {{ podcast.title }}
         </li>
       </ul>
     </div>
+    <hr />
   </div>
 </template>
 
 <script>
 import axios from "axios";
 import { debounce } from "lodash";
-// import ButtonBase from "./ButtonBase.vue";
+
 export default {
   data: function () {
     return {
@@ -58,26 +52,14 @@ export default {
       podcasts: [],
     };
   },
-  // components: {
-  //   ButtonBase,
-  // },
+
   methods: {
     checkName() {
-      // eslint-disable-next-line no-console
-      // console.log(`Checking name: ${this.Title}`);
-
-      console.log(this.$data.Title);
       axios
         .get(
-          `https://localhost:44395/api/Podcasts/PodcastName/${this.$data.Title}`,
-          {
-            // params: {
-            //   search: this.Title
-            // }
-          }
+          `https://localhost:44395/api/Podcasts/PodcastName/${this.$data.Title}`
         )
         .then((res) => {
-          // eslint-disable-next-line no-console
           this.podcasts = res.data;
         })
         .catch((err) => {
@@ -99,8 +81,59 @@ export default {
 </script>
 
 <style scoped>
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+ul {
+  color: #fbb99c;
+}
+.sub__btn {
+  background-color: #282320;
+  color: #f5f6f4;
+  border: 2px solid #be3e3a;
+  width: 9%;
+  padding: 18px;
+  font-size: 15px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-left: 45%;
+}
+.sub__btn:hover {
+  background-color: #616467;
+  color: #fff;
+}
+.title-search {
+  background-color: #282320;
+  color: #f5f6f4;
+  border: 2px solid #be3e3a;
+  margin-left: 12%;
+  width: 75%;
+}
 .input-base {
-  color: white;
-  background-color: black;
+  margin-top: 10%;
+}
+hr {
+  color: #fbb99c;
+}
+.search-results {
+  margin: 5%;
+}
+.subhero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  color: #f5f6f4;
+  margin-bottom: 2%;
+}
+.subhero > h1 {
+  font-size: 3em;
+}
+.subhero > span {
+  margin-top: 10px;
 }
 </style>

@@ -4,8 +4,8 @@
   <Home />
   <SubHero />
   <YourPodcasts />
-  <Search/>
   <InputBase/>
+  <Shuffler/>
   </div>
 </template>
 
@@ -13,16 +13,16 @@
 import Home from "./Home.vue";
 import SubHero from "./SubHero.vue";
 import YourPodcasts from "./YourPodcasts.vue";
-import Search from '../views/Search.vue';
 import InputBase from '../components/base/InputBase.vue';
+import Shuffler from '../views/Shuffler.vue';
 export default {
   name: "Root",
   components: {
     Home,
     SubHero,
     YourPodcasts,
-    Search,
     InputBase,
+    Shuffler,
   }
 };
 </script>
