@@ -15,7 +15,7 @@ const routes = [
     path: '/shuffle',
     name: 'Shuffle',
     component: () => import(/* webpackChunkName: "about" */ '../views/Shuffler.vue')
-  }
+  },
 ]
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
