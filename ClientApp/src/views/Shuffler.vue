@@ -1,17 +1,58 @@
 <template lang="html">
-    <div class="subhero">
-      <h1>Not sure?</h1>
+  <div class="subhero">
+    <h1>Not sure?</h1>
       <span>Click for a suggestion!</span>
-      <ShuffleIcon />
-    </div>
+    <button @click.prevent="checkName"><ShuffleIcon /></button>
+        <div class="p-5 shuffle-results">
+    
+          <div>
+           <h2>{{ episode.title }}</h2>
+          </div>
+
+      </div>
+    <hr />
+  </div>
 </template>
 
 <script>
 import ShuffleIcon from "../components/icons/ShuffleIcon.vue";
+import axios from "axios";
+import { debounce } from "lodash";
 export default {
   name: "Shuffler",
   components: {
     ShuffleIcon,
+  },
+  data: function () {
+    return {
+      Title: "",
+      episode: {},
+    };
+  },
+
+  methods: {
+    checkName() {
+      axios
+        .get(
+          `https://localhost:44395/api/Episodes/random`
+        )
+        .then((res) => {
+          this.episode = res.data;
+        })
+        .catch((err) => {
+          // eslint-disable-next-line no-console
+          console.log(err);
+        });
+    },
+  },
+  created() {
+    this.debounceName = debounce(this.checkName, 1000);
+  },
+  watch: {
+    Title() {
+      if (!this.Title) return;
+      this.debounceName();
+    },
   },
 };
 </script>
@@ -57,5 +98,8 @@ ul {
 }
 span {
   margin-bottom: 5%;
+}
+hr {
+  color: #fbb99c;
 }
 </style>
