@@ -102,4 +102,7 @@ span {
 hr {
   color: #fbb99c;
 }
+.shuffle-results {
+  margin-top: 5%;
+}
 </style>

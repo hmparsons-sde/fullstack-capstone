@@ -31,11 +31,11 @@
       <button @click.prevent="checkName" class="btn sub__btn">Search</button>
     </div>
     <div class="p-5 search-results">
-      <ul>
-        <li v-for="podcast in podcasts" :key="podcast.id">
+      <div class="card" v-for="podcast in podcasts" :key="podcast.id">
+        <h1>
           {{ podcast.title }}
-        </li>
-      </ul>
+        </h1>
+      </div>
     </div>
     <hr />
   </div>
@@ -118,9 +118,7 @@ ul {
 hr {
   color: #fbb99c;
 }
-.search-results {
-  margin: 5%;
-}
+
 .subhero {
   display: flex;
   flex-direction: column;
@@ -129,6 +127,13 @@ hr {
   margin-top: 80px;
   color: #f5f6f4;
   margin-bottom: 2%;
+}
+.search-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
 }
 .subhero > h1 {
   font-size: 3em;
