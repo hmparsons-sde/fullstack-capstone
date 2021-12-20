@@ -1,6 +1,7 @@
 ﻿# Poddammit (or For the Love of Pod)!
 ## Nashville Software School - Cohort E14 - Final Capstone
 ### DEPLOYED APP
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d403f3e8-a409-4786-bd69-aa8894a1e9dc/deploy-status)](https://app.netlify.com/sites/poddammit/deploys)
 ### PROJECT OVERVIEW
 As a typical millennial, I love true crime podcasts, especially when hosted by comedians. However, sometimes I want different subject matter or a more serious presentation. I spend too much time scrolling through Spotify, yet I always end up listening to the same 4 shows. 
 
