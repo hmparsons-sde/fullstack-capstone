@@ -3,20 +3,26 @@
 <div>
   <Home />
   <SubHero />
-  <YourMusic />
+  <YourPodcasts />
+  <InputBase/>
+  <Shuffler/>
   </div>
 </template>
 
 <script>
 import Home from "./Home.vue";
 import SubHero from "./SubHero.vue";
-import YourMusic from "./YourMusic.vue";
+import YourPodcasts from "./YourPodcasts.vue";
+import InputBase from '../components/base/InputBase.vue';
+import Shuffler from '../views/Shuffler.vue';
 export default {
   name: "Root",
   components: {
     Home,
     SubHero,
-    YourMusic,
+    YourPodcasts,
+    InputBase,
+    Shuffler,
   }
 };
 </script>

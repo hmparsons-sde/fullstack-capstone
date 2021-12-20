@@ -2,7 +2,6 @@
     <div class="subhero">
       <h1>Looking for podcasts?</h1>
       <span>Pick up where you left off...</span>
-     <router-link to="/search"><button type="button" class="btn sub__btn">SEARCH</button></router-link>
     </div>
 </template>
 
@@ -20,6 +19,7 @@ export default {
   align-items: center;
   margin-top: 80px;
   color: #f5f6f4;
+  margin-bottom: 5%;
 }
 .subhero > h1 {
   font-size: 3em;
@@ -40,5 +40,14 @@ export default {
 .sub__btn:hover {
   background-color: #616467;
   color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+ul {
+  color: #fbb99c;
 }
 </style>
