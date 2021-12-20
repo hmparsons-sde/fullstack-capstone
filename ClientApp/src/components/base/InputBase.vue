@@ -32,6 +32,20 @@
     </div>
     <div class="p-5 search-results">
       <div class="card" v-for="podcast in podcasts" :key="podcast.id">
+        <div class="overlay">
+          <h2 style="white-space: pre-line;">
+          Genre: {{ podcast.genre }}
+          </h2>
+          <br />
+          <h3>Total Episodes: {{ podcast.totalEpisodes}}</h3>
+          <br>
+          <h3>Listen Score: {{ podcast.listenScore }}</h3>
+          <br>
+          <h4>Explicit Content? {{ podcast.explicitContent }}</h4>
+        </div>
+        <div class="shadow-lg mr-4 rounded-smmr-4 relative">
+          <img :src="podcast.image" alt="Podcast logo" class="Podcasts__banner">
+        </div>
         <h1>
           {{ podcast.title }}
         </h1>
@@ -130,7 +144,8 @@ hr {
 }
 .search-results {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 5%;
@@ -140,5 +155,54 @@ hr {
 }
 .subhero > span {
   margin-top: 10px;
+}
+img {
+  width:400px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  /* margin-left: 27%; */
+  color: #f5f6f4;
+  /* margin-bottom: 2%; */
+}
+.card {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  /* margin-left: 27%; */
+  color: #f5f6f4;
+  padding: 2%;
+  /* margin-bottom: 2%; */
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: 0.5s ease;
+  width: 400px;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.card:hover .overlay {
+  opacity: 0.8;
+}
+.card:hover .abs {
+  visibility: visible;
 }
 </style>

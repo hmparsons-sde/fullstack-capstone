@@ -1,6 +1,7 @@
 <template lang="html">
   <div class="Podcasts">
     <div class="overlay">
+      <h2>SEE MORE</h2>
     </div>
     <img
       :src='img'
@@ -39,16 +40,21 @@ export default {
 }
 .overlay {
   position: absolute;
-
   width: 100%;
   min-width: 70%;
   background-color: rgba(0, 0, 0, 0.9);
   height: 100%;
   opacity: 0;
   transition: 0.5s ease;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .Podcasts:hover .overlay {
-  opacity: 1;
+  opacity: 0.85;
 }
 .Podcasts:hover .abs {
   visibility: visible;
@@ -65,7 +71,7 @@ export default {
 .link {
   margin: 46px;
   font-weight: bold;
-  color: #1ed760;
+  color: #be3e3a;
 }
 .abs {
   position: absolute;
@@ -75,5 +81,10 @@ export default {
 }
 .Podcasts__heading {
   left: 120px;
+}
+h2 {
+  color: #fbb99c;
+  font-weight: 700;
+  font-size: 28px;
 }
 </style>
