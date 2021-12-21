@@ -40,10 +40,10 @@ export default {
   transition: 0.5s ease;
 }
 .home__button {
-  background-color: #1db954;
+  background-color: #be3e3a;
 }
 .home__button:hover {
-  background-color: #1ed760;
+  background-color: #be3e3a;
 }
 .home__text {
   margin-top: 50px;

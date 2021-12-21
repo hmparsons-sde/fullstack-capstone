@@ -7,7 +7,8 @@
           <router-link to="/about"><li>About</li></router-link>
 
           <li>Jobs</li>
-          <li>For the records</li>
+          <li>For the Record</li>
+         <a href="https://github.com/hmparsons-sde/fullstack-capstone"><li>Github Repo</li></a>
         </ul>
       </div>
       <div class="third">
@@ -56,7 +57,7 @@ export default {
 }
 .container span:hover {
   cursor: pointer;
-  color: #1ed760;
+  color: #be3e3a;
 }
 .footer {
   color: #fff;
@@ -80,7 +81,7 @@ li {
   margin-top: 20px;
 }
 li:hover {
-  color: #1ed760;
+  color: #be3e3a;
 }
 span {
   color: #919496;

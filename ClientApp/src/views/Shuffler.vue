@@ -4,11 +4,14 @@
       <span>Click for a suggestion!</span>
     <button @click.prevent="checkName"><ShuffleIcon /></button>
         <div class="p-5 shuffle-results">
-    
+          <div class="card">
+          <div class="shadow-lg mr-4 rounded-smmr-4 relative">
+          <img :src="episode.image">
+        </div>
           <div>
-           <h2>{{ episode.title }}</h2>
+           <h2 class="ml-2">{{ episode.title }}</h2>
           </div>
-
+        </div>
       </div>
     <hr />
   </div>
@@ -84,8 +87,7 @@ export default {
   margin-top: 30px;
 }
 .sub__btn:hover {
-  background-color: #616467;
-  color: #fff;
+  color: #be3e3a;
 }
 h1,
 h2,
@@ -104,5 +106,53 @@ hr {
 }
 .shuffle-results {
   margin-top: 5%;
+}
+img {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  /* margin-left: 27%; */
+  color: #f5f6f4;
+  /* margin-bottom: 2%; */
+}
+.card {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  /* margin-left: 27%; */
+  color: #f5f6f4;
+  /* margin-bottom: 2%; */
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: 0.5s ease;
+  width: 400px;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.card:hover .overlay {
+  opacity: 1;
+}
+.card:hover .abs {
+  visibility: visible;
 }
 </style>

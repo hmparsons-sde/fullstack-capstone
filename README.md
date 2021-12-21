@@ -15,21 +15,19 @@ https://dbdiagram.io/d/61abb4268c901501c0e0a303
 ### PROJECT BOARD
 https://github.com/hmparsons-sde/fullstack-capstone/projects/1
 ### USER STORIES
-- As a user, I want to register for the app, so that I can find podcast shows and episodes by subject matter.
-    -  Given that I want to listen to a specific type of show, when I select specific filters and submit, then recommended shows are returned. 
-    - The same is true for episodes. The search UI will provide the option to search by episode, search by show, or both.
-
-- As an authenticated user, I want to be able to save shows and episodes to my playlists, so that I can listen to them later.
+- As a user, I want to visit the app, so that I can find new podcast shows and episodes.
+- As a user, I want to be able to save shows and episodes to my playlists, so that I can listen to them later.
     - Given that I find a show I like, when I click the "heart" button, then the item is stored to a list.
 
-- As an authenticated user, I want the option to find a random item to listen to, so that I can discover new content.
-    - Given that I want random content without using search filters, when I click "shuffle," then a random show is returned. 
-    - The shuffle UI will provide the option to shuffle by episode, shuffle by show, or both.
+- As a user, I want the option to find a random episode to listen to, so that I can discover new content.
+    - Given that I want random content without using the searchbar, when I click "shuffle," then a random show is returned. 
 ### TECHNOLOGIES USED
 - C#
 - ASP.NET Core
 - T-SQL
 - Microsoft SQL Server
+- Dapper
+- Swagger
 - Azure
 - Vue
 - Vuex

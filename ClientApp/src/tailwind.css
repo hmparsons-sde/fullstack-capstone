@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     @apply bg-black;
+    scroll-behavior: smooth;
   }
   header {
     position: sticky;
@@ -40,7 +41,7 @@
   .navlink__header {
     width: 60%;
     display: flex;
-    color: #F5F6F4;
+    color: #be3e3a;
   }
   .link__container .nav__link {
     margin-right: 30px;
@@ -70,7 +71,7 @@
   }
   .nav__link:hover,
   .profile__header > span:hover {
-    color: #1db954;
+    color: #be3e3a;
   }
   .btn {
     margin-top: 20px;
