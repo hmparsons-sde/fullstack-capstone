@@ -16,6 +16,11 @@ const routes = [
     name: 'Shuffle',
     component: () => import(/* webpackChunkName: "about" */ '../views/Shuffler.vue')
   },
+  {
+    path: '/search',
+    name: 'Search',
+    component: () => import(/* webpackChunkName: "about" */ '../components/base/InputBase.vue')
+  },
 ]
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

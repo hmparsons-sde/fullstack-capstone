@@ -22,7 +22,7 @@ export default {
     SubHero,
     YourPodcasts,
     InputBase,
-    Shuffler,
+    Shuffler
   }
 };
 </script>

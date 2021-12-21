@@ -9,6 +9,7 @@
 
       <div class="navlink__header">
           <div class="link__container">
+            <router-link to="/"><div class="nav__link">Home</div></router-link>
               <router-link to="/shuffle"><div class="nav__link">Shuffler</div></router-link>
               <router-link to="/search"><div class="nav__link">Search</div></router-link>
               <router-link to="/playlists"><div class="nav__link">Playlists</div></router-link>
